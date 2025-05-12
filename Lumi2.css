@@ -1,0 +1,15 @@
+body {
+    background-image: url(pagina\ inicial@2x.png);
+    background-size: cover;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    display: flex; /* Adiciona Flexbox ao body */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Garante que o body tenha a altura da tela */
+}
+
+p{
+    size: 340px;
+}
