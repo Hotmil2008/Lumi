@@ -1,0 +1,10 @@
+body{
+  background-image: url(pagina\ inicial@2x.png);
+  background-size: cover;
+  padding: 0rem;
+  border: 0rem;
+  margin: 0rem;    
+  height: 100vh;
+  backdrop-filter: blur(1rem);  
+}
+
