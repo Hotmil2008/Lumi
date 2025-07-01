@@ -1,0 +1,580 @@
+
+
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <span class="logo-icon">🧠</span>
+                <span>LUMI Sistema Educacional</span>
+            </div>
+            <div class="nav-tabs" id="navTabs">
+                <div class="nav-tab active" data-target="tela-comecar">Começar</div>
+                <div class="nav-tab" data-target="tela-login">Login</div>
+                <div class="nav-tab" data-target="tela-cadastro-pai">Cad. Pai</div>
+                <div class="nav-tab" data-target="tela-cadastro-filho">Cad. Filho</div>
+                <div class="nav-tab" data-target="tela-inicial">Início</div>
+                <div class="nav-tab" data-target="tela-usuario">Usuário</div>
+                <div class="nav-tab" data-target="tela-temporizador">Temporizador</div>
+                <div class="nav-tab" data-target="tela-puzzle-1">Puzzle 1</div>
+                <div class="nav-tab" data-target="tela-puzzle-2">Puzzle 2</div>
+                <div class="nav-tab" data-target="tela-puzzle-3">Puzzle 3</div>
+                <div class="nav-tab" data-target="tela-opcoes">Opções</div>
+                <div class="nav-tab" data-target="tela-volume">Volume</div>
+                <div class="nav-tab" data-target="tela-cadastro-questoes">Questões</div>
+                <div class="nav-tab" data-target="tela-cadastro-testes">Testes</div>
+            </div>
+        </header>
+        
+        <main class="app-content">
+            <!-- Tela Começar -->
+            <section id="tela-comecar" class="screen active">
+                <h2 class="screen-title"><i class="fas fa-play-circle"></i> Bem-vindo ao LUMI</h2>
+                <div class="card">
+                    <p>O LUMI é um sistema educacional inovador que combina testes cognitivos, jogos educativos e controle de tempo para proporcionar a melhor experiência de aprendizado para crianças.</p>
+                    <div style="text-align: center; margin-top: 20px;">
+                        <button class="btn">Começar Agora <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fas fa-database"></i> Sobre o Sistema</h3>
+                    </div>
+                    <p>O LUMI foi desenvolvido com base em um modelo de banco de dados robusto que inclui:</p>
+                    <ul style="margin: 15px 0 15px 20px;">
+                        <li>Gestão de Responsáveis e Alunos</li>
+                        <li>Testes Cognitivos Personalizados</li>
+                        <li>Questões e Alternativas</li>
+                        <li>Respostas dos Alunos</li>
+                        <li>Controle de Tempo (Temporizador)</li>
+                    </ul>
+                    <p>Tudo isso para oferecer uma experiência educacional completa e eficiente.</p>
+                </div>
+            </section>
+            
+<section id="tela-usuario" class="screen">
+                <h2 class="screen-title"><i class="fas fa-user-circle"></i> Perfil do Usuário</h2>
+                
+                <div class="user-profile">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Maria Silva</h3>
+                    <p>Responsável por Pedro Oliveira</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fas fa-info-circle"></i> Informações Pessoais</h3>
+                    </div>
+                    <div class="form-group">
+                        <label for="usuario-nome"><i class="fas fa-user"></i> Nome</label>
+                        <input type="text" id="usuario-nome" value="Maria Silva">
+                    </div>
+                    <div class="form-group">
+                        <label for="usuario-email"><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" id="usuario-email" value="maria.silva@exemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="usuario-telefone"><i class="fas fa-phone"></i> Telefone</label>
+                        <input type="tel" id="usuario-telefone" value="(11) 99999-8888">
+                    </div>
+                    <div style="text-align: center; margin-top: 20px;">
+                        <button class="btn">Atualizar Informações <i class="fas fa-sync-alt"></i></button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fas fa-child"></i> Dependentes</h3>
+                    </div>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Idade</th>
+                                    <th>Série</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Pedro Oliveira</td>
+                                    <td>8 anos</td>
+                                    <td>3º Ano</td>
+                                    <td>Ativo</td>
+                                </tr>
+                                <tr>
+                                    <td>Ana Oliveira</td>
+                                    <td>5 anos</td>
+                                    <td>Pré-escola</td>
+                                    <td>Ativo</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="text-align: center; margin-top: 15px;">
+                        <button class="btn">Adicionar Dependente <i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+    </section>
+
+            <!-- Tela Temporizador -->
+            
+            
+            <!-- Tela Puzzle 1 -->
+            <section id="tela-puzzle-1" class="screen">
+                <h2 class="screen-title"><i class="fas fa-puzzle-piece"></i> Puzzle Matemático</h2>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fas fa-calculator"></i> Complete o Puzzle</h3>
+                    </div>
+                    <p>Resolva as operações matemáticas para completar o puzzle:</p>
+                    
+                    <div class="puzzle-container">
+                        <div class="puzzle-piece">5 + 3</div>
+                        <div class="puzzle-piece">10 - 4</div>
+                        <div class="puzzle-piece">2 × 4</div>
+                        <div class="puzzle-piece">12 ÷ 3</div>
+                        <div class="puzzle-piece">7 + 8</div>
+                        <div class="puzzle-piece">15 - 9</div>
+                        <div class="puzzle-piece">3 × 5</div>
+                        <div class="puzzle-piece">18 ÷ 2</div>
+                        <div class="puzzle-piece">9 + 6</div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 20px;">
+                        <button class="btn">Verificar Respostas <i class="fas fa-check"></i></button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Tela Puzzle 2 -->
+            <section id="tela-puzzle-2" class="screen">
+                <h2 class="screen-title"><i class="fas fa-puzzle-piece"></i> Puzzle de Sequência</h2>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fas fa-sort-amount-down-alt"></i> Complete a Sequência</h3>
+                    </div>
+                    <p>Arraste as peças para completar a sequência lógica:</p>
+                    
+                    <div class="puzzle-container">
+                        <div class="puzzle-piece" style="background:linear-gradient(135deg, var(--purple), #8e44ad)">A</div>
+                        <div class="puzzle-piece" style="background:linear-gradient(135deg, var(--purple), #8e44ad)">B</div>
+                        <div class="puzzle-piece" style="background:linear-gradient(135deg, var(--purple), #8e44ad)">C</div>
+                        <div class="puzzle-piece" style="background:linear-gradient(135deg, var(--pink), #fd79a8)">?</div>
+                        <div class="puzzle-piece" style="background:linear-gradient(135deg, var(--pink), #fd79a8)">E</div>
+                        <div class="puzzle-piece" style="background:linear-gradient(135deg, var(--pink), #fd79a8)">F</div>
+                        <div class="puzzle-piece" style="background:linear-gradient(135deg, var(--warning), #e67e22)">1</div>
+                        <div class="puzzle-piece" style="background:linear-gradient(135deg, var(--warning), #e67e22)">2</div>
+                        <div class="puzzle-piece" style="background:linear-gradient(135deg, var(--warning), #e67e22)">?</div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 20px;">
+                        <button class="btn">Verificar Sequência <i class="fas fa-check"></i></button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Tela Puzzle 3 -->
+            <section id="tela-puzzle-3" class="screen">
+                <h2 class="screen-title"><i class="fas fa-puzzle-piece"></i> Puzzle de Memória</h2>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fas fa-brain"></i> Encontre os Pares</h3>
+                    </div>
+                    <p>Encontre os pares iguais virando as cartas:</p>
+                    
+                    <div class="puzzle-container">
+                        <div class="puzzle-piece" style="background:linear-gradient(135deg, var(--primary), var(--blue-dark))"><i class="fas fa-star"></i></div>
+                        <div class="puzzle-piece" style="background:linear-gradient(135deg, var(--secondary), var(--green-dark))"><i class="fas fa-heart"></i></div>
+                        <div class="puzzle-piece" style="background:linear-gradient(135deg, var(--accent), #c0392b)"><i class="fas fa-moon"></i></div>
+                        <div class="puzzle-piece" style="background:linear-gradient(135deg, var(--warning), #e67e22)"><i class="fas fa-sun"></i></div>
+                        <div class="puzzle-piece" style="background:linear-gradient(135deg, var(--purple), #8e44ad)"><i class="fas fa-cloud"></i></div>
+                        <div class="puzzle-piece" style="background:linear-gradient(135deg, var(--pink), #fd79a8)"><i class="fas fa-tree"></i></div>
+                        <div class="puzzle-piece" style="background:linear-gradient(135deg, var(--primary), var(--blue-dark))"><i class="fas fa-star"></i></div>
+                        <div class="puzzle-piece" style="background:linear-gradient(135deg, var(--secondary), var(--green-dark))"><i class="fas fa-heart"></i></div>
+                        <div class="puzzle-piece" style="background:linear-gradient(135deg, var(--accent), #c0392b)"><i class="fas fa-moon"></i></div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 20px;">
+                        <button class="btn">Reiniciar Jogo <i class="fas fa-redo"></i></button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Tela Opções -->
+            <section id="tela-opcoes" class="screen">
+                <h2 class="screen-title"><i class="fas fa-cog"></i> Configurações do Sistema</h2>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fas fa-user-shield"></i> Conta e Segurança</h3>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> Notificações por Email</label>
+                        <div style="display: flex; gap: 15px;">
+                            <label style="display: flex; align-items: center; gap: 5px;">
+                                <input type="radio" name="notificacoes" checked> Ativadas
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 5px;">
+                                <input type="radio" name="notificacoes"> Desativadas
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-shield-alt"></i> Autenticação de Dois Fatores</label>
+                        <div style="display: flex; gap: 15px;">
+                            <label style="display: flex; align-items: center; gap: 5px;">
+                                <input type="radio" name="autenticacao"> Ativada
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 5px;">
+                                <input type="radio" name="autenticacao" checked> Desativada
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 20px;">
+                        <button class="btn">Salvar Configurações <i class="fas fa-save"></i></button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fas fa-palette"></i> Aparência</h3>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-moon"></i> Modo Escuro</label>
+                        <div style="display: flex; gap: 15px;">
+                            <label style="display: flex; align-items: center; gap: 5px;">
+                                <input type="radio" name="modo-escuro"> Ativado
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 5px;">
+                                <input type="radio" name="modo-escuro" checked> Desativado
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-font"></i> Tamanho da Fonte</label>
+                        <select>
+                            <option>Pequeno</option>
+                            <option selected>Médio</option>
+                            <option>Grande</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-language"></i> Idioma</label>
+                        <select>
+                            <option selected>Português (Brasil)</option>
+                            <option>Inglês</option>
+                            <option>Espanhol</option>
+                        </select>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 20px;">
+                        <button class="btn">Aplicar Alterações <i class="fas fa-paint-brush"></i></button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Tela Volume -->
+            <section id="tela-volume" class="screen">
+                <h2 class="screen-title"><i class="fas fa-volume-up"></i> Configurações de Áudio</h2>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fas fa-sliders-h"></i> Controles de Volume</h3>
+                    </div>
+                    
+                    <div class="volume-control">
+                        <i class="fas fa-volume-down" style="font-size: 1.5rem;"></i>
+                        <input type="range" class="volume-slider" value="80">
+                        <i class="fas fa-volume-up" style="font-size: 1.5rem;"></i>
+                    </div>
+                    
+                    <div class="volume-control">
+                        <i class="fas fa-music" style="font-size: 1.5rem;"></i>
+                        <input type="range" class="volume-slider" value="70">
+                        <span>Música</span>
+                    </div>
+                    
+                    <div class="volume-control">
+                        <i class="fas fa-bell" style="font-size: 1.5rem;"></i>
+                        <input type="range" class="volume-slider" value="90">
+                        <span>Efeitos Sonoros</span>
+                    </div>
+                    
+                    <div class="volume-control">
+                        <i class="fas fa-microphone" style="font-size: 1.5rem;"></i>
+                        <input type="range" class="volume-slider" value="60">
+                        <span>Voz</span>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 20px;">
+                        <button class="btn">Salvar Configurações <i class="fas fa-save"></i></button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Tela Cadastro de Questões -->
+            <section id="tela-cadastro-questoes" class="screen">
+                <h2 class="screen-title"><i class="fas fa-question-circle"></i> Cadastro de Questões</h2>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fas fa-plus"></i> Nova Questão</h3>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="teste-questao"><i class="fas fa-book"></i> Teste Associado</label>
+                            <select id="teste-questao">
+                                <option value="">Selecione o teste</option>
+                                <option value="1">Matemática Básica</option>
+                                <option value="2">Lógica e Raciocínio</option>
+                                <option value="3">Memória Visual</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="enunciado"><i class="fas fa-align-left"></i> Enunciado da Questão</label>
+                            <textarea id="enunciado" rows="3" placeholder="Digite o enunciado da questão"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo-questao"><i class="fas fa-tasks"></i> Tipo de Questão</label>
+                            <select id="tipo-questao">
+                                <option value="">Selecione o tipo</option>
+                                <option value="multipla">Múltipla Escolha</option>
+                                <option value="dissertativa">Dissertativa</option>
+                                <option value="verdadeiro">Verdadeiro/Falso</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="dificuldade"><i class="fas fa-signal"></i> Dificuldade</label>
+                            <select id="dificuldade">
+                                <option value="">Selecione a dificuldade</option>
+                                <option value="facil">Fácil</option>
+                                <option value="medio">Médio</option>
+                                <option value="dificil">Difícil</option>
+                            </select>
+                        </div>
+                        
+                        <div id="alternativas-container">
+                            <div class="card" style="margin-top: 15px;">
+                                <div class="card-header">
+                                    <h4 class="card-title"><i class="fas fa-list"></i> Alternativas</h4>
+                                </div>
+                                <div class="form-group">
+                                    <label>Alternativa 1</label>
+                                    <input type="text" placeholder="Texto da alternativa">
+                                    <label style="display: flex; align-items: center; gap: 5px; margin-top: 5px;">
+                                        <input type="checkbox"> Correta
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label>Alternativa 2</label>
+                                    <input type="text" placeholder="Texto da alternativa">
+                                    <label style="display: flex; align-items: center; gap: 5px; margin-top: 5px;">
+                                        <input type="checkbox"> Correta
+                                    </label>
+                                </div>
+                                <div style="text-align: center; margin-top: 10px;">
+                                    <button class="btn">Adicionar Alternativa <i class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 20px;">
+                            <button class="btn">Salvar Questão <i class="fas fa-save"></i></button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fas fa-list"></i> Questões Cadastradas</h3>
+                    </div>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Enunciado</th>
+                                    <th>Tipo</th>
+                                    <th>Dificuldade</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Q001</td>
+                                    <td>Quanto é 5 + 7?</td>
+                                    <td>Múltipla Escolha</td>
+                                    <td>Fácil</td>
+                                    <td>
+                                        <button class="btn" style="padding: 5px 10px;"><i class="fas fa-edit"></i></button>
+                                        <button class="btn btn-danger" style="padding: 5px 10px;"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Q002</td>
+                                    <td>Qual é a capital do Brasil?</td>
+                                    <td>Múltipla Escolha</td>
+                                    <td>Fácil</td>
+                                    <td>
+                                        <button class="btn" style="padding: 5px 10px;"><i class="fas fa-edit"></i></button>
+                                        <button class="btn btn-danger" style="padding: 5px 10px;"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Q003</td>
+                                    <td>Explique o que é fotossíntese</td>
+                                    <td>Dissertativa</td>
+                                    <td>Médio</td>
+                                    <td>
+                                        <button class="btn" style="padding: 5px 10px;"><i class="fas fa-edit"></i></button>
+                                        <button class="btn btn-danger" style="padding: 5px 10px;"><i class="fas fa-trash"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Tela Cadastro de Testes -->
+            <section id="tela-cadastro-testes" class="screen">
+                <h2 class="screen-title"><i class="fas fa-clipboard-list"></i> Cadastro de Testes</h2>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fas fa-plus"></i> Novo Teste</h3>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="nome-teste"><i class="fas fa-heading"></i> Nome do Teste</label>
+                            <input type="text" id="nome-teste" placeholder="Nome do teste">
+                        </div>
+                        <div class="form-group">
+                            <label for="descricao-teste"><i class="fas fa-align-left"></i> Descrição</label>
+                            <textarea id="descricao-teste" rows="2" placeholder="Descrição do teste"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="tempo-teste"><i class="fas fa-clock"></i> Tempo Limite (minutos)</label>
+                            <input type="number" id="tempo-teste" value="30">
+                        </div>
+                        
+                        <div class="card" style="margin-top: 15px;">
+                            <div class="card-header">
+                                <h4 class="card-title"><i class="fas fa-question"></i> Questões do Teste</h4>
+                            </div>
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Selecionar</th>
+                                            <th>ID</th>
+                                            <th>Enunciado</th>
+                                            <th>Dificuldade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Q001</td>
+                                            <td>Quanto é 5 + 7?</td>
+                                            <td>Fácil</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Q002</td>
+                                            <td>Qual é a capital do Brasil?</td>
+                                            <td>Fácil</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Q003</td>
+                                            <td>Explique o que é fotossíntese</td>
+                                            <td>Médio</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Q004</td>
+                                            <td>Qual é o maior planeta do sistema solar?</td>
+                                            <td>Fácil</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 20px;">
+                            <button class="btn">Salvar Teste <i class="fas fa-save"></i></button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title"><i class="fas fa-list"></i> Testes Cadastrados</h3>
+                    </div>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nome</th>
+                                    <th>Questões</th>
+                                    <th>Tempo</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>T001</td>
+                                    <td>Matemática Básica</td>
+                                    <td>10</td>
+                                    <td>30 min</td>
+                                    <td>
+                                        <button class="btn" style="padding: 5px 10px;"><i class="fas fa-edit"></i></button>
+                                        <button class="btn btn-danger" style="padding: 5px 10px;"><i class="fas fa-trash"></i></button>
+                                        <button class="btn btn-purple" style="padding: 5px 10px;"><i class="fas fa-eye"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>T002</td>
+                                    <td>Lógica e Raciocínio</td>
+                                    <td>15</td>
+                                    <td>45 min</td>
+                                    <td>
+                                        <button class="btn" style="padding: 5px 10px;"><i class="fas fa-edit"></i></button>
+                                        <button class="btn btn-danger" style="padding: 5px 10px;"><i class="fas fa-trash"></i></button>
+                                        <button class="btn btn-purple" style="padding: 5px 10px;"><i class="fas fa-eye"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>T003</td>
+                                    <td>Memória Visual</td>
+                                    <td>8</td>
+                                    <td>20 min</td>
+                                    <td>
+                                        <button class="btn" style="padding: 5px 10px;"><i class="fas fa-edit"></i></button>
+                                        <button class="btn btn-danger" style="padding: 5px 10px;"><i class="fas fa-trash"></i></button>
+                                        <button class="btn btn-purple" style="padding: 5px 10px;"><i class="fas fa-eye"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

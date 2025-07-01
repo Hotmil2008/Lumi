@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <section id="tela-cadastro-filho" class="screen">
+        <h2 class="screen-title"><i class="fas fa-child"></i> Cadastro de Aluno</h2>
+        <div class="card">
+            <form>
+                <div class="form-group">
+                    <label for="nome-filho"><i class="fas fa-user"></i> Nome da Criança</label>
+                    <input type="text" id="nome-filho" placeholder="Nome completo da criança">
+                </div>
+
+                <div class="form-group">
+                    <label for="nascimento-filho"><i class="fas fa-birthday-cake"></i> Data de Nascimento</label>
+                    <input type="date" id="nascimento-filho">
+                </div>
+
+                <div class="form-group">
+                    <label for="matricula"><i class="fas fa-id-badge"></i> Matrícula Escolar</label>
+                    <input type="text" id="matricula" placeholder="Número de matrícula">
+                </div>
+
+                <div class="form-group">
+                    <label for="serie"><i class="fas fa-graduation-cap"></i> Série/Escolaridade</label>
+                    <select id="serie">
+                        <option value="">Selecione a série</option>
+                        <option value="pre">Pré-escola</option>
+                        <option value="1">1º Ano</option>
+                        <option value="2">2º Ano</option>
+                        <option value="3">3º Ano</option>
+                        <option value="4">4º Ano</option>
+                        <option value="5">5º Ano</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="responsavel"><i class="fas fa-user-friends"></i> Responsável</label>
+                    <select id="responsavel">
+                        <option value="">Selecione o responsável</option>
+                        <option value="1">Maria Silva</option>
+                        <option value="2">João Oliveira</option>
+                        <option value="3">Ana Pereira</option>
+                    </select>
+                </div>
+                
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="Login.html">
+                        <button class="btn">Cadastrar Aluno <i class="fas fa-child"></i></button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <section id="tela-temporizador" class="screen">
+        <h2 class="screen-title"><i class="fas fa-clock"></i> Controle de Tempo</h2>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title"><i class="fas fa-stopwatch"></i> Temporizador Ativo</h3>
+            </div>
+            
+            <div class="timer-display">
+                01:30:00
+            </div>
+            
+            <div class="timer-controls">
+                <button class="btn"><i class="fas fa-play"></i> Iniciar</button>
+                <button class="btn btn-warning"><i class="fas fa-pause"></i> Pausar</button>
+                <button class="btn btn-danger"><i class="fas fa-stop"></i> Parar</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title"><i class="fas fa-history"></i> Histórico de Temporizadores</h3>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Duração</th>
+                            <th>Aluno</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01/07/2025</td>
+                            <td>01:30:00</td>
+                            <td>Pedro Oliveira</td>
+                            <td>Ativo</td>
+                        </tr>
+                        <tr>
+                            <td>30/06/2025</td>
+                            <td>02:00:00</td>
+                            <td>Pedro Oliveira</td>
+                            <td>Concluído</td>
+                        </tr>
+                        <tr>
+                            <td>28/06/2025</td>
+                            <td>01:45:00</td>
+                            <td>Ana Oliveira</td>
+                            <td>Concluído</td>
+                        </tr>
+                        <tr>
+                            <td>25/06/2025</td>
+                            <td>01:15:00</td>
+                            <td>Pedro Oliveira</td>
+                            <td>Concluído</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title"><i class="fas fa-plus-circle"></i> Novo Temporizador</h3>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label for="aluno-temporizador"><i class="fas fa-child"></i> Aluno</label>
+                    <select id="aluno-temporizador">
+                        <option value="">Selecione o aluno</option>
+                        <option value="1">Pedro Oliveira</option>
+                        <option value="2">Ana Oliveira</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="duracao"><i class="fas fa-hourglass-half"></i> Duração (minutos)</label>
+                    <input type="number" id="duracao" value="90">
+                </div>
+
+                <div class="form-group">
+                    <label for="titulo-temporizador"><i class="fas fa-heading"></i> Título</label>
+                    <input type="text" id="titulo-temporizador" placeholder="Título do temporizador">
+                </div>
+                <div class="form-group">
+                    <label for="descricao-temporizador"><i class="fas fa-align-left"></i> Descrição</label>
+                    <textarea id="descricao-temporizador" rows="3" placeholder="Descrição do temporizador"></textarea>
+                </div>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    
+                    <button class="btn">Criar Temporizador <i class="fas fa-plus"></i></button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
